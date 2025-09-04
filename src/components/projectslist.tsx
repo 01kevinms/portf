@@ -6,9 +6,10 @@ type ProjectListProps = {
   title: string
   src: string;
   onClick: (()=>void);
+  a: (()=>void);
 };
 
-const ProjectList = ({ children, title, src, onClick}: ProjectListProps) => {
+const ProjectList = ({ children, title, src, onClick, a}: ProjectListProps) => {
 
   return (
     <Boxlist>
@@ -22,7 +23,7 @@ const ProjectList = ({ children, title, src, onClick}: ProjectListProps) => {
     <h2>{title}</h2>
     <p>{children}</p>
     <div className="btt">
-    <a href={src} target="_blank" rel="noopener noreferrer">Prev</a>
+    <a onClick={a}>Prev</a>
 <button onClick={onClick}>Codigo</button>
     </div>
       </div>

@@ -22,3 +22,12 @@ export const Movies  = ()=>{
 export const Finance = ()=>{
   window.location.href =  "https://github.com/01kevinms/dev-finance"
 }
+export const PrevTodolist = ()=>{
+  window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
+}
+export const PrevFinance = ()=>{
+window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
+}
+export const PrevMovie = ()=>{
+  window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
+}

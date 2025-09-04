@@ -7,7 +7,7 @@ import dev from "../../assets/devfin.png"
 import movie from "../../assets/Captura de tela 2025-08-27 221540.png"
 import avatar from "../../assets/avatarpn.png"
 import background from '../../assets/bg.png'
-import { email, Finance, github, linked, Movies, ToDoList, whatsapp } from "../../components/links"
+import { email, Finance, github, linked, Movies, PrevFinance, PrevMovie, PrevTodolist, ToDoList, whatsapp } from "../../components/links"
 
 const App=()=> {
 
@@ -45,9 +45,9 @@ const App=()=> {
 <Img />
         </div>
         <div className="proj">
-<ProjectList onClick={ToDoList} src={todolist} title="to-Do List">app para organizar tarefas</ProjectList>
-<ProjectList onClick={Finance} src={dev}  title="DevFintech">app para organizar suas finanças</ProjectList>
-<ProjectList onClick={Movies} src={movie}  title="DevMovies">site mostrando destaques do cinema</ProjectList>
+<ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="to-Do List">app para organizar tarefas</ProjectList>
+<ProjectList a={PrevFinance} onClick={Finance} src={dev}  title="DevFintech">app para organizar suas finanças</ProjectList>
+<ProjectList a={PrevMovie} onClick={Movies} src={movie}  title="DevMovies">site mostrando destaques do cinema</ProjectList>
        
         </div>
       </About>
