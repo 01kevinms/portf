@@ -64,6 +64,7 @@ background-color: #0f1527ff;
         &:hover{
             transform: scale(1.1);
             transition: 90ms;
+            cursor: pointer;
         }
     
         }
@@ -98,6 +99,7 @@ background-color: #0f1527ff;
     
         }
         &:hover{
+             cursor: pointer;
             transform: scale(1.1);
             transition: 90ms;
         }

@@ -12,7 +12,6 @@ export const email = ()=>{
     window.location.href =  "https://www.linkedin.com/in/kevin-me"
  }
 
- 
 export const ToDoList = ()=>{
   window.location.href = "https://github.com/01kevinms/To-Do-List"
 }
@@ -26,8 +25,8 @@ export const PrevTodolist = ()=>{
   window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
 }
 export const PrevFinance = ()=>{
-window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
+window.location.href ='https://01kevinms.github.io/dev-finance'
 }
 export const PrevMovie = ()=>{
-  window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
+  window.location.href ='https://01kevinms.github.io/devmovie'
 }

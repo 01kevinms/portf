@@ -1,6 +1,6 @@
 import styled from "styled-components";
  
-export const Body = styled.body`
+export const Body = styled.div`
 .backgroundab{
   width: 100%;
   height: 150%;
@@ -12,41 +12,46 @@ export const Body = styled.body`
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-.aboutctt{
+.aboutctt {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start; /* alinha topo das colunas */
   color: #fff;
-  position: relative;
-  left: -6%;
-top: 200px;
-  .blog{
-    background:rgba(2, 4, 17, 1);
-    border: solid rgba(95, 92, 92, 0.34);
-    border-radius: 10px;
-    width: 40%;
-    
-    p{
-      padding: 15px;
-      padding-top: 20px;
-      position: relative;
-      top: -40px;
-    }
-h3{
-  position: relative;
-  top: -50px;
-}
-  }
-  .contact{
+  margin: 200px auto 0 auto;
+  width: 90%;
+  gap: 50px;
+
+  .blog {
     background: rgba(2, 4, 17, 1);
     border: solid rgba(95, 92, 92, 0.34);
     border-radius: 10px;
-    width: 400px;
-    align-items: center;
-    height: 150px;
+    width: 40%;
+    padding: 20px;
+    position: relative;
+    left: -10%;
+    p {
+      padding-top: 0;
+      position: relative;
+      top: 0;
+    }
+
+    h3 {
+      top: 0;
+    }
+  }
+ .contact {
+    background: rgba(2, 4, 17, 1);
+    border: solid rgba(95, 92, 92, 0.34);
+    border-radius: 10px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  
    div{
     gap: 70px;
     display: flex;
@@ -80,7 +85,51 @@ h3{
   filter: blur(3px);
 
 }
+ /* Media Queries */
+  @media (max-width: 1024px) {
+    .backgroundab{
+      position: fixed;
+    }
+    .aboutctt {
+      flex-direction: column;
+      top: 100px;
+      align-items: center;
+      position: relative;
+      .blog{
+        left: 0;
+        width: 80%;
+        margin-bottom: 20px;
+      }
+      .contact{
+        width: 80%;
+        position: relative;
+        bottom: 20px;
+      }
+    }
+  }
 
+  @media (max-width: 768px) {
+    .aboutctt {
+        position: relative;
+        top: -100px;
+    }
+    
+    .contact div {
+      flex-direction: row;
+      gap: 20px;
+      bottom: 110px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .aboutctt {
+      top: 100px;
+    }
+
+    .blog, .contact {
+      width: 100%;
+    }
+  }
 `
 export const Container = styled.div`
 background: #11314f;
@@ -253,21 +302,70 @@ background: #0F2027;
       width: 250px;
     }
 }
+  @media (max-width: 1024px) {
+    .d1 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 550px;
+      .s1 {
+        text-align: center;
+        .pj, .ctt {
+          font-size: 1.2em;
+          padding: 8px;
+        }
+      }
+      .circle {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+
+    .s1 h1 {
+      font-size: 30px;
+    }
+
+    .s1 p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .s1 h1 {
+      font-size: 28px;
+    }
+
+    .s1 p {
+      font-size: 16px;
+    }
+
+    .pj, .ctt {
+      font-size: 1em;
+      padding: 6px;
+      width: 100%;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+    }
+  }
 `
 export const About = styled.div`
-
+margin-top: 50px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 .aboutimg{
-  position: relative;
-  left: -200px;
   background: #04050fff;
   color: aliceblue;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
   header{
     display: flex;
     align-items: center;
@@ -286,5 +384,51 @@ justify-content: space-around;
 h1{
 color: aliceblue;
 }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    top: 200px;
+    .aboutimg {
+      left: 0;
+      width: 90%;
+      text-align: center;
+    div{
+        align-items: center;
+        justify-content: center;
+      }
+    }
 
+    .proj {
+      height: auto;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 780px){
+    top: -50px;
+    left: 20px;
+    .aboutimg{
+      div{
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .proj{
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 480px) {
+    top: -50px;
+    .aboutimg {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .proj {
+      flex-direction: column;
+      gap: 10px;
+      height: auto;
+    }
+  }
 `
