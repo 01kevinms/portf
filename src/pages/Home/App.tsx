@@ -62,7 +62,7 @@ const App = () => {
           <ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="To-Do List">app para organizar tarefas</ProjectList>
           <ProjectList a={PrevFinance} onClick={Finance} src={dev} title="DevFintech">app para organizar suas finanças</ProjectList>
           <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
-          <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="DevMovies">site para gerenciar sua rotina</ProjectList>
+          <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="habit tracker">site para gerenciar sua rotina</ProjectList>
 
         </div>
       </About>
