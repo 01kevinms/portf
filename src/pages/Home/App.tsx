@@ -7,7 +7,8 @@ import dev from "../../assets/devfin.png";
 import movie from "../../assets/Captura de tela 2025-08-27 221540.png";
 import avatar from "../../assets/avatarpn.png";
 import background from '../../assets/bg.png';
-import { email, Finance, github, linked, Movies, PrevFinance, PrevMovie, PrevTodolist, ToDoList, whatsapp } from "../../components/links";
+import habit from '../../assets/habit.png';
+import { email, Finance, github, Habits, linked, Movies, PrevFinance, Prevhabit, PrevMovie, PrevTodolist, ToDoList, whatsapp } from "../../components/links.tsx";
 import ContactButton from "../../components/button";
 import { useState } from "react";
 import { CloseBtn, ModalContent, ModalOverlay } from "./modalstyle";
@@ -61,6 +62,8 @@ const App = () => {
           <ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="To-Do List">app para organizar tarefas</ProjectList>
           <ProjectList a={PrevFinance} onClick={Finance} src={dev} title="DevFintech">app para organizar suas finanças</ProjectList>
           <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
+          <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="DevMovies">site para gerenciar sua rotina</ProjectList>
+
         </div>
       </About>
 

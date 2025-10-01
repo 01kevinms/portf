@@ -21,6 +21,9 @@ export const Movies  = ()=>{
 export const Finance = ()=>{
   window.location.href =  "https://github.com/01kevinms/dev-finance"
 }
+export const Habits  = ()=>{
+  window.location.href = "https://github.com/01kevinms/habit-front"
+}
 export const PrevTodolist = ()=>{
   window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
 }
@@ -29,4 +32,7 @@ window.location.href ='https://01kevinms.github.io/dev-finance'
 }
 export const PrevMovie = ()=>{
   window.location.href ='https://01kevinms.github.io/devmovie'
+}
+export const Prevhabit = ()=>{
+  window.location.href = 'https://01kevinms.github.io/habit-front'
 }
