@@ -11,7 +11,6 @@ export const email = ()=>{
  export const linked = ()=>{
     window.location.href =  "https://www.linkedin.com/in/kevin-me"
  }
-
 export const ToDoList = ()=>{
   window.location.href = "https://github.com/01kevinms/To-Do-List"
 }
@@ -24,6 +23,9 @@ export const Finance = ()=>{
 export const Habits  = ()=>{
   window.location.href = "https://github.com/01kevinms/habit-front"
 }
+export const Weather  = ()=>{
+  window.location.href = "https://github.com/01kevinms/api-weather"
+}
 export const PrevTodolist = ()=>{
   window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
 }
@@ -35,4 +37,7 @@ export const PrevMovie = ()=>{
 }
 export const Prevhabit = ()=>{
   window.location.href = 'https://01kevinms.github.io/habit-front'
+}
+export const PrevWeather = ()=>{
+  window.location.href = 'https://01kevinms.github.io/api-weather'
 }

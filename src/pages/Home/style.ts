@@ -92,7 +92,7 @@ export const Body = styled.div`
     }
     .aboutctt {
       flex-direction: column;
-      top: 100px;
+      bottom: -150px;
       align-items: center;
       position: relative;
       .blog{
@@ -360,12 +360,23 @@ margin-top: 50px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+.allpro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  h1{
+    height: 50px;
+    color: aliceblue;
+  }
+}
 .aboutimg{
   background: #04050fff;
   color: aliceblue;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
   header{
     display: flex;
     align-items: center;
@@ -377,12 +388,10 @@ justify-content: space-around;
   
 }
 .proj{
-  display: flex;
-  gap: 15px;
+  display: grid;
   height: 425px;
-}
-h1{
-color: aliceblue;
+  grid-template-columns: 200px 200px 200px;
+  gap: 55px;
 }
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -401,8 +410,9 @@ color: aliceblue;
     }
 
     .proj {
-      height: auto;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      gap: 40px;
     }
   }
   @media (max-width: 780px){

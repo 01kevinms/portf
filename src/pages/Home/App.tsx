@@ -8,7 +8,9 @@ import movie from "../../assets/Captura de tela 2025-08-27 221540.png";
 import avatar from "../../assets/avatarpn.png";
 import background from '../../assets/bg.png';
 import habit from '../../assets/habit.png';
-import { email, Finance, github, Habits, linked, Movies, PrevFinance, Prevhabit, PrevMovie, PrevTodolist, ToDoList, whatsapp } from "../../components/links.tsx";
+import weather from '../../assets/weather.png';
+
+import { email, Finance, github, Habits, linked, Movies, PrevFinance, Prevhabit, PrevMovie, PrevTodolist, PrevWeather, ToDoList, Weather, whatsapp } from "../../components/links.tsx";
 import ContactButton from "../../components/button";
 import { useState } from "react";
 import { CloseBtn, ModalContent, ModalOverlay } from "./modalstyle";
@@ -57,14 +59,19 @@ const App = () => {
           <h3>Plataformas, linguagens e styles com conhecimentos</h3>
           <Img />
         </div>
+<div className="allpro">
 
+          <h1>projetos</h1>
         <div className="proj">
           <ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="To-Do List">app para organizar tarefas</ProjectList>
           <ProjectList a={PrevFinance} onClick={Finance} src={dev} title="DevFintech">app para organizar suas finanças</ProjectList>
           <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
           <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="habit tracker">site para gerenciar sua rotina</ProjectList>
+          <ProjectList a={PrevWeather} onClick={Weather} src={weather} title="my weather">procure como esta clima da regiao</ProjectList>
+
 
         </div>
+</div>
       </About>
 
       <div className="aboutctt">
