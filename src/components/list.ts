@@ -31,6 +31,10 @@ background-color: #0f1527ff;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 10px;
+        p{
+            padding-left: 10px;
+        }
         .btt{
             display: flex;
             gap: 20px;
@@ -39,13 +43,14 @@ background-color: #0f1527ff;
             background: #172553ff;
             width: 60px;
             display: flex;
+            font-size: 20px;
             align-items: center;
             justify-content: center;
+            border-radius: 7px;
             color: #ffffffff;
            text-decoration: none;
-           font-size: 20px;
-           border-radius: 7px;
-           &::after{
+           position: relative;
+&::after{
     content: '';
     height: 3px;
     width: 0%;
@@ -62,26 +67,22 @@ background-color: #0f1527ff;
     
         }
         &:hover{
+             cursor: pointer;
             transform: scale(1.1);
             transition: 90ms;
-            cursor: pointer;
         }
     
         }
-        p{
-            padding-left: 10px;
-        }
-        gap: 10px;
         button{
+            background: #172553ff;
+            display: flex;
             padding: 10px;
             font-size: 18px;
             border: none;
+            justify-content: center;
             border-radius: 7px;
-            background: #172553ff;
             color: #fff;
             position: relative;
-            display: flex;
-            justify-content: center;
 &::after{
     content: '';
     height: 3px;

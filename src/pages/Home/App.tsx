@@ -68,8 +68,6 @@ const App = () => {
           <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
           <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="habit tracker">site para gerenciar sua rotina</ProjectList>
           <ProjectList a={PrevWeather} onClick={Weather} src={weather} title="my weather">procure como esta clima da regiao</ProjectList>
-
-
         </div>
 </div>
       </About>

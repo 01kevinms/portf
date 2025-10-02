@@ -16,7 +16,7 @@ export const Body = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start; /* alinha topo das colunas */
+  align-items: flex-start; 
   color: #fff;
   margin: 200px auto 0 auto;
   width: 90%;
