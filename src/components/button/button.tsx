@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from "./buttonstyle";
+import { Container } from "../button/buttonstyle";
 import emailjs from "emailjs-com";
 
 interface ContactButtonProps {

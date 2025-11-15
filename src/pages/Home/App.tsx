@@ -1,5 +1,5 @@
-import Img from "../../components/Img";
-import ProjectList from "../../components/projectslist";
+import Img from "../../components/imgs/Img.tsx";
+import ProjectList from "../../components/projectlist/projectslist.tsx";
 import { About, Body, Container } from "./style";
 import { Linkedin, Mail, Phone } from "lucide-react";
 import todolist from "../../assets/todolist.png";
@@ -9,9 +9,9 @@ import avatar from "../../assets/avatarpn.png";
 import background from '../../assets/bg.png';
 import habit from '../../assets/habit.png';
 import weather from '../../assets/weather.png';
-
-import { email, Finance, github, Habits, linked, Movies, PrevFinance, Prevhabit, PrevMovie, PrevTodolist, PrevWeather, ToDoList, Weather, whatsapp } from "../../components/links.tsx";
-import ContactButton from "../../components/button";
+import landing from '../../assets/landing.png';
+import { email, Finance, github, Habits, Landing, linked, Movies, PrevFinance, Prevhabit, PrevLanding, PrevMovie, PrevTodolist, PrevWeather, ToDoList, Weather, whatsapp } from "../../components/links/links.tsx";
+import ContactButton from "../../components/button/button.tsx";
 import { useState } from "react";
 import { CloseBtn, ModalContent, ModalOverlay } from "./modalstyle";
 
@@ -20,8 +20,8 @@ const App = () => {
 
   return (
     <Body>
-      <img className="backgroundab" src={background} alt="" />
-
+      <img className="backgroundab" src={background}/>
+      <div className="maindiv">
       <Container>
         <div className="d1">
           <div className="s1">
@@ -68,10 +68,12 @@ const App = () => {
           <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
           <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="habit tracker">site para gerenciar sua rotina</ProjectList>
           <ProjectList a={PrevWeather} onClick={Weather} src={weather} title="my weather">procure como esta clima da regiao</ProjectList>
+          <ProjectList a={PrevLanding} onClick={Landing} src={landing} title="Modo">Loja de moda,venda e compre para a si</ProjectList>
+
         </div>
 </div>
       </About>
-
+</div>
       <div className="aboutctt">
         <div className="blog">
           <h3>Blog</h3>

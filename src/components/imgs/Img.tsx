@@ -1,10 +1,10 @@
-import tail from '../assets/TailwindCSS.png';
-import react from '../assets/React.png';
-import node from '../assets/Node.js.png'; 
-import types from '../assets/TypeScript.png';
-import mongo from '../assets/MongoDB.png'; 
-import sql from '../assets/MySQL.png'; 
-import git from '../assets/GitHub.png';  // Adjust the path as needed
+import tail from '../../assets/TailwindCSS.png';
+import react from '../../assets/React.png';
+import node from '../../assets/Node.js.png'; 
+import types from '../../assets/TypeScript.png';
+import mongo from '../../assets/MongoDB.png'; 
+import sql from '../../assets/MySQL.png'; 
+import git from '../../assets/GitHub.png';  // Adjust the path as needed
 import { Container, Imgs } from './stylelogo';
 
 const Img = () => {

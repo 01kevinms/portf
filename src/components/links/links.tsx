@@ -26,6 +26,9 @@ export const Habits  = ()=>{
 export const Weather  = ()=>{
   window.location.href = "https://github.com/01kevinms/api-weather"
 }
+export const  Landing  = ()=>{
+  window.location.href = "https://github.com/01kevinms/landing-modo"
+}
 export const PrevTodolist = ()=>{
   window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
 }
@@ -40,4 +43,7 @@ export const Prevhabit = ()=>{
 }
 export const PrevWeather = ()=>{
   window.location.href = 'https://01kevinms.github.io/api-weather'
+}
+export const PrevLanding = ()=>{
+  window.location.href = 'https://01kevinms.github.io/landing-modo'
 }
