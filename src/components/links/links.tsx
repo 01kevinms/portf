@@ -47,3 +47,6 @@ export const PrevWeather = ()=>{
 export const PrevLanding = ()=>{
   window.location.href = 'https://01kevinms.github.io/landing-modo'
 }
+export const PrevRabbit = ()=>{
+  window.location.href = 'https://github.com/01kevinms/docker-rabbit'
+}

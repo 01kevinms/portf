@@ -10,7 +10,9 @@ import background from '../../assets/bg.png';
 import habit from '../../assets/habit.png';
 import weather from '../../assets/weather.png';
 import landing from '../../assets/landing.png';
-import { email, Finance, github, Habits, Landing, linked, Movies, PrevFinance, Prevhabit, PrevLanding, PrevMovie, PrevTodolist, PrevWeather, ToDoList, Weather, whatsapp } from "../../components/links/links.tsx";
+import rabbit from '../../assets/rabbit.png';
+
+import { email, Finance, github, Habits, Landing, linked, Movies, PrevFinance, Prevhabit, PrevLanding, PrevMovie, PrevRabbit, PrevTodolist, PrevWeather, ToDoList, Weather, whatsapp } from "../../components/links/links.tsx";
 import ContactButton from "../../components/button/button.tsx";
 import { useState } from "react";
 import { CloseBtn, ModalContent, ModalOverlay } from "./modalstyle";
@@ -63,12 +65,13 @@ const App = () => {
 
           <h1>projetos</h1>
         <div className="proj">
-          <ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="To-Do List">app para organizar tarefas</ProjectList>
           <ProjectList a={PrevFinance} onClick={Finance} src={dev} title="DevFintech">app para organizar suas finanças</ProjectList>
-          <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
           <ProjectList a={Prevhabit} onClick={Habits} src={habit} title="habit tracker">site para gerenciar sua rotina</ProjectList>
+          <ProjectList a={PrevRabbit} onClick={PrevRabbit} src={rabbit} title="">Sistema Assíncrono de Processamento de Dados Climáticos usando rabbitmq, worker-go, nestjs</ProjectList>
+          <ProjectList a={PrevTodolist} onClick={ToDoList} src={todolist} title="To-Do List">app para organizar tarefas</ProjectList>
+          <ProjectList a={PrevMovie} onClick={Movies} src={movie} title="DevMovies">site mostrando destaques do cinema</ProjectList>
           <ProjectList a={PrevWeather} onClick={Weather} src={weather} title="my weather">procure como esta clima da regiao</ProjectList>
-          <ProjectList a={PrevLanding} onClick={Landing} src={landing} title="Modo">Loja de moda,venda e compre para a si</ProjectList>
+          <ProjectList a={PrevLanding} onClick={Landing} src={landing} title="Modo">Loja de moda, compre para a si, e para sua loja</ProjectList>
 
         </div>
 </div>
