@@ -1,63 +1,51 @@
 import styled from "styled-components";
 
-export const Imgs = styled.img`
-width: 80px;
-` 
 export const Container = styled.div`
-height: auto;
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 50px;
-padding-left: 20px;
-.char{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    img{
-        width: 50px;
-    }
-    p{
-        color: #fff;
-    }
-    width: 95%;
-@media (max-width: 768px) {
-    flex-wrap: wrap;
-}
-}
-.learning{
-background: #141414ff;
-color: #fff;
-border-radius: 20px;
-width: 300px;
-padding: 15px;
-.beginner{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-bottom: 2px solid  rgba(212, 192, 9, 1);
-    top: -10px;
-}
-h2{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-li{
-    list-style: none;
-    display: flex;
-    padding-bottom: 20px;
-    align-items: center;
-    img{
-        padding-right: 10px;
-        width: 30px;
-        height: 30px;
-        
-    }
-    
-}
+  width: 100%;
+  display: grid;
+  font-family: Raleway, sans-serif;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+`;
 
-}
-`
+export const LearningCard = styled.div`
+  position: relative;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem 1.8rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.7);
+  }
+`;
+
+export const LevelBadge = styled.div<{ color: string }>`
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: ${({ color }) => color};
+  color: #020617;
+`;
+
+export const TechItem = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+`;
+
+export const TechIcon = styled.img`
+  width: 26px;
+  height: 26px;
+`;

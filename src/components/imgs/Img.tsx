@@ -1,54 +1,66 @@
+import {
+  Container,
+  LearningCard,
+  TechItem,
+  TechIcon,
+  LevelBadge,
+} from "./stylelogo";
 import tail from '../../assets/TailwindCSS.png';
 import react from '../../assets/React.png';
+import next from '../../assets/next.png'; 
+import nest from '../../assets/nest.png'; 
 import node from '../../assets/Node.js.png'; 
 import types from '../../assets/TypeScript.png';
 import mongo from '../../assets/MongoDB.png'; 
 import sql from '../../assets/MySQL.png'; 
-import git from '../../assets/GitHub.png';  // Adjust the path as needed
-import { Container, Imgs } from './stylelogo';
+import docker from '../../assets/docker.png'; 
+const learningData = [
+  {
+    level: "Frontend",
+    color: "#facc15",
+    techs: [
+      { name: "Tailwind", icon: tail },
+      { name: "React", icon: react },
+      { name: "Next.js", icon: next },
+    ],
+  },
+  {
+    level: "Backend",
+    color: "#60a5fa",
+    techs: [
+      { name: "Nest.js", icon: nest },
+      { name: "Node.js", icon: node },
+      { name: "TypeScript", icon: types },
+    ],
+  },
+  {
+    level: "Banco dados/DevOps",
+    color: "#22c55e",
+    techs: [
+      { name: "mySQL", icon: sql },
+      { name: "mongoDb", icon: mongo },
+      { name: "docker", icon: docker },
+    ],
+  },
+];
 
-const Img = () => {
-    return (
-        <Container>
-        <div className='char'>
-            <div>
-        <Imgs src={tail} alt="" />
-        <p>tailwind</p>
-            </div>
-            <div>
-        <Imgs src={react} alt="" />
-         <p>React</p>
-            </div>
-            <div>
-        <Imgs src={node} alt="" />
-         <p>Node.js</p>
-            </div>
-            <div>
-        <Imgs src={mongo} alt="" />
-         <p>MongoDB</p>
-            </div>
-            <div>
-        <Imgs src={git} alt="" />
-         <p>github</p>
-            </div>
-        </div>
-        <div className='learning'>
-            <h2>Estudando no momento</h2>
-            <p className='beginner'>iniciante</p>
-            <ul>
+export default function Img() {
+  return (
+    <Container>
+      {learningData.map((group) => (
+        <LearningCard key={group.level}>
+          <LevelBadge color={group.color}>
+            {group.level}
+          </LevelBadge>
 
-        <li>
-        <Imgs src={types} alt="" />
-        <p>typescript</p>
-        </li>
-
-        <li>
-        <Imgs src={sql} alt="" />
-        <p>Mysql</p>
-        </li>
-            </ul>
-        </div>
-        </Container>
-    );
+          {group.techs.map((tech) => (
+            <TechItem key={tech.name}>
+              <TechIcon src={tech.icon} alt={tech.name} />
+              <span>{tech.name}</span>
+            </TechItem>
+          ))}
+        </LearningCard>
+      ))}
+    </Container>
+  );
 }
-export default Img

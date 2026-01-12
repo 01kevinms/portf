@@ -29,6 +29,9 @@ export const Weather  = ()=>{
 export const  Landing  = ()=>{
   window.location.href = "https://github.com/01kevinms/landing-modo"
 }
+export const  Store  = ()=>{
+  window.location.href = "https://github.com/01kevinms/e_commerce"
+}
 export const PrevTodolist = ()=>{
   window.location.href ='https://01kevinms.github.io/To-Do-List/index.html'
 }
@@ -49,4 +52,7 @@ export const PrevLanding = ()=>{
 }
 export const PrevRabbit = ()=>{
   window.location.href = 'https://github.com/01kevinms/docker-rabbit'
+}
+export const PrevStore = ()=>{
+  window.location.href = 'https://01kevinms.github.io/e_commerce/'
 }
