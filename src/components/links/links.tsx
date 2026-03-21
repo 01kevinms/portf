@@ -14,8 +14,8 @@ export const email = ()=>{
 export const ToDoList = ()=>{
   window.location.href = "https://github.com/01kevinms/To-Do-List"
 }
-export const Movies  = ()=>{
-  window.location.href = "https://github.com/01kevinms/devmovie"
+export const FlowDo  = ()=>{
+  window.location.href = "https://github.com/01kevinms/interface_flowdo"
 }
 export const Finance = ()=>{
   window.location.href =  "https://github.com/01kevinms/dev-finance"
@@ -38,8 +38,8 @@ export const PrevTodolist = ()=>{
 export const PrevFinance = ()=>{
 window.location.href ='https://01kevinms.github.io/dev-finance'
 }
-export const PrevMovie = ()=>{
-  window.location.href ='https://01kevinms.github.io/devmovie'
+export const PrevFlowdo = ()=>{
+  window.location.href ='https://interface-flowdo.vercel.app'
 }
 export const Prevhabit = ()=>{
   window.location.href = 'https://01kevinms.github.io/habit-front'

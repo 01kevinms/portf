@@ -1,13 +1,14 @@
-import todolist from "../../../../assets/todolist.png";
+
 import devfinance from "../../../../assets/devfin.png";
 import habit from "../../../../assets/habit.png";
-import weather from "../../../../assets/weather.png";
 import landing from "../../../../assets/landing.png";
 import rabbit from "../../../../assets/rabbit.png";
 import neoshop from "../../../../assets/neoshop.png";
+import flowdo from "../../../../assets/flowdo.png";
 
 
-import { Finance, github, Habits, Landing, PrevFinance, Prevhabit, PrevLanding, PrevRabbit, PrevStore, PrevTodolist, PrevWeather, Store, ToDoList, Weather } from "../../../links/links";
+
+import { Finance, FlowDo, github, Habits, Landing, PrevFinance, PrevFlowdo, Prevhabit, PrevLanding, PrevRabbit, PrevStore, Store } from "../../../links/links";
 
 export const projects = [
   {
@@ -33,6 +34,14 @@ export const projects = [
     onCode: Habits,
     onPreview: Prevhabit,
   },
+    {
+    id:"flowDo" ,
+    title: "Flow-Do",
+    description: "Uma plataforma que permite criar projetos, gerenciar tarefas com prioridades, convidar membros com controle de permissões, acompanhar atividades em um dashboard e trocar mensagens em chats internos, tudo em tempo real.",
+    image: flowdo,
+    onCode: FlowDo,
+    onPreview: PrevFlowdo,
+  },
   {
     id:"landing" ,
     title: "Landing Page",
@@ -48,21 +57,5 @@ export const projects = [
     image: rabbit,
     onCode: github,
     onPreview: PrevRabbit,
-  },
-    {
-    id:"todolist" ,
-    title: "ToDo List",
-    description: "Lista de tarefas com foco em produtividade",
-    image: todolist,
-    onCode: ToDoList,
-    onPreview: PrevTodolist,
-  },
-    {
-    id:"wather" ,
-    title: "Weather",
-    description: "Consulta climática em tempo real",
-    image: weather,
-    onCode: Weather,
-    onPreview: PrevWeather,
-  },
+  }
 ];
