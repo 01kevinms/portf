@@ -28,7 +28,7 @@ const glowPulse = keyframes`
 
 export const CarouselWrapper = styled.section`
   position: relative;
-  width: 100%;
+  width: fullwidth;
   min-height: 380px;
   padding: 8rem 1.5rem;
   display: flex;
